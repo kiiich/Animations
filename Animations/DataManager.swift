@@ -12,17 +12,17 @@ class DataManager {
     static let shared = DataManager()
     
     let animations = [
-        ("zoomIn", "spring", 0.5, 0.5, 0.5),
-        ("pop", "spring", 0.5, 0.5, 0.5),
-        ("morth", "spring", 0.5, 0.5, 0.5),
-        ("wobble", "spring", 0.5, 0.5, 0.5),
-        ("flipX", "spring", 0.5, 0.5, 0.5),
-        ("flipY", "spring", 0.5, 0.5, 0.5),
-        ("fall", "spring", 0.5, 0.5, 0.5),
-        ("squeezeLeft", "spring", 0.5, 0.5, 0.5),
-        ("squeezeRight", "spring", 0.5, 0.5, 0.5),
-        ("squeezeUp", "spring", 0.5, 0.5, 0.5),
-        ("fadeIn", "spring", 0.5, 0.5, 0.5)
+        ("zoomIn", "easeIn", 0.2, 0.3, 0.8),
+        ("pop", "spring", 0.5, 0.3, 0.4),
+        ("flash", "spring", 0.2, 0.3, 0.6),
+        ("wobble", "linear", 0.7, 0.2, 0.9),
+        ("flipX", "spring", 0.3, 0.5, 0.2),
+        ("flipY", "spring", 0.8, 0.2, 0.4),
+        ("fall", "easeInCirc", 0.6, 0.2, 0.3),
+        ("squeezeLeft", "spring", 0.2, 0.8, 0.9),
+        ("squeezeRight", "easeOut", 0.7, 0.5, 0.3),
+        ("squeezeUp", "spring", 0.2, 0.4, 0.9),
+        ("fadeIn", "linear", 0.5, 0.5, 0.5)
     ]
     
     private init() {}
