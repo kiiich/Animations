@@ -67,17 +67,57 @@
 		01CF95F426FB91E2008F2B12 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				01CF95F526FB91E2008F2B12 /* AppDelegate.swift */,
-				01CF95F726FB91E2008F2B12 /* SceneDelegate.swift */,
-				01CF960926FB941A008F2B12 /* Animation.swift */,
-				01CF960B26FB94E1008F2B12 /* DataManager.swift */,
-				01CF95F926FB91E2008F2B12 /* ViewController.swift */,
-				01CF95FB26FB91E2008F2B12 /* Main.storyboard */,
-				01CF95FE26FB91E3008F2B12 /* Assets.xcassets */,
-				01CF960026FB91E3008F2B12 /* LaunchScreen.storyboard */,
+				01E1481426FBB260005D1DE4 /* Models */,
+				01E1481326FBB247005D1DE4 /* Services */,
+				01E1481526FBB288005D1DE4 /* StoryBoards */,
+				01E1481626FBB2A1005D1DE4 /* Controllers */,
+				01E1481726FBB2B4005D1DE4 /* App */,
 				01CF960326FB91E3008F2B12 /* Info.plist */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		01E1481326FBB247005D1DE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01CF960B26FB94E1008F2B12 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01E1481426FBB260005D1DE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01CF960926FB941A008F2B12 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01E1481526FBB288005D1DE4 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				01CF960026FB91E3008F2B12 /* LaunchScreen.storyboard */,
+				01CF95FB26FB91E2008F2B12 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		01E1481626FBB2A1005D1DE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01CF95F926FB91E2008F2B12 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		01E1481726FBB2B4005D1DE4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				01CF95FE26FB91E3008F2B12 /* Assets.xcassets */,
+				01CF95F526FB91E2008F2B12 /* AppDelegate.swift */,
+				01CF95F726FB91E2008F2B12 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		3A42B45F86C1C758EFC9A013 /* Frameworks */ = {
