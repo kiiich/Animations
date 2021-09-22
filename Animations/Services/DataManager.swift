@@ -19,9 +19,9 @@ class DataManager {
         ("flipX", "spring", 0.3, 0.5, 0.2),
         ("flipY", "spring", 0.8, 0.2, 0.4),
         ("fall", "easeInCirc", 0.6, 0.2, 0.3),
-        ("squeezeLeft", "spring", 0.2, 0.8, 0.9),
-        ("squeezeRight", "easeOut", 0.7, 0.5, 0.3),
-        ("squeezeUp", "spring", 0.2, 0.4, 0.9),
+        ("squeezeLeft", "spring", 0.2, 0.8, 0.2),
+        ("squeezeRight", "easeOut", 0.7, 0.5, 0.1),
+        ("squeezeUp", "spring", 0.2, 0.4, 0.1),
         ("fadeIn", "linear", 0.5, 0.5, 0.5)
     ]
     
