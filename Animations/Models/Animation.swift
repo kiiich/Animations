@@ -15,18 +15,73 @@ struct Animation {
     let duration: Double
     let delay: Double
     
-    static func getAnimations() -> [Animation] {
+    var description: String {
+        """
+        preset: \(preset)
+        curve: \(curve)
+        force: \(force)
+        duration: \(duration)
+        delay: \(delay)
+        """
+    }
+    
+    static func getAnimations(animationCount: Int) -> [Animation] {
         
         var result: [Animation] = []
         
-        for animation in DataManager.shared.animations {
+        let presets = [
+            "shake",
+            "pop",
+            "morph",
+            "squeeze",
+            "wobble",
+            "swing",
+            "flipX",
+            "flipY",
+            "fall",
+            "squeezeLeft",
+            "squeezeRight",
+            "squeezeDown",
+            "squeezeUp",
+            "slideLeft",
+            "slideRight",
+            "slideDown",
+            "slideUp",
+            "fadeIn",
+            "fadeOut",
+            "fadeInLeft",
+            "fadeInRight",
+            "fadeInDown",
+            "fadeInUp",
+            "zoomIn",
+            "zoomOut",
+            "flash"
+        ]
+        
+        let curves = [
+            "spring",
+            "linear",
+            "easeIn",
+            "easeOut",
+            "easeInOut",
+        ]
+        
+        for _ in 0...animationCount {
+           
+            guard let currentPreset = presets.randomElement() else { continue
+            }
+            
+            guard let currentCurve = curves.randomElement() else {
+                continue
+            }
+            
             result.append(
                 Animation(
-                    preset: animation.0,
-                    curve: animation.1,
-                    force: animation.2,
-                    duration: animation.3,
-                    delay: animation.4
+                    preset: currentPreset,
+                    curve: currentCurve,
+                    force: Double.random(in: 0.1...0.5),
+                    duration: Double.random(in: 0.1...0.5),
+                    delay: Double.random(in: 0.1...0.5)
                 )
             )
         }

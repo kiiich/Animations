@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     
     private var currentIndex = 0
-    private let animations = Animation.getAnimations().shuffled()
+    private let animations = Animation.getAnimations(animationCount: 30).shuffled()
     private var currentAnimation: Animation {
         animations[currentIndex]
     }
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         runAnimationSetValues()
     }
     
-    @IBAction func nextAnimationPressed(_ sender: UIButton) {
+    @IBAction func nextAnimationPressed(_ sender: Any) {
         runAnimationSetValues()
     }
     
@@ -45,13 +45,7 @@ class ViewController: UIViewController {
     }
     
     private func setLabelTitle() {
-        mainLabel.text = """
-            preset: \(currentAnimation.preset)
-            curve: \(currentAnimation.curve)
-            force: \(currentAnimation.force)
-            duration: \(currentAnimation.duration)
-            delay: \(currentAnimation.delay)
-            """
+        mainLabel.text = currentAnimation.description
     }
     
     private func setButtonTitle() {
